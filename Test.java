@@ -1,10 +1,12 @@
 class Test {
 
-    public static void main(String[] args){
-        //keywords => certain words that make the basic java constructs
-        //identifiers => are names of class ,variables, enums, inteface, fucntions..
-        //Test, main , String, args 
+    public static void main(String[] args) {
+        
+        System.out.println("hello world");
+        System.out.println("hellow world 2");
+        System.out.println("hello world");
+        System.out.println("hellow world 2");
 
-        System.out.println("hellow this is our first class");
+
     }
 }
