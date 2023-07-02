@@ -90,19 +90,66 @@ public class forLoop {
 
 
          //it for rows
-         for(int i=0;i<6;i++){
+        //  for(int i=0;i<6;i++){
 
-            //it is for star printing
-            for(int j=0 ;j<=i ;j++){
-                System.out.print("*");
-            }
-            System.out.print("\n");
-         }
+        //     //it is for star printing
+        //     for(int j=0 ;j<=i ;j++){
+        //         System.out.print("*");
+        //     }
+        //     System.out.print("\n");
+        //  }
        
 
 
          /*
-       
+         | | | | | |*| => spaces=5 star=1
+         | | | | |*|*| => spaces=4 star=2
+         | | | |*|*|*| => spaces=3 star=3
+         | | |*|*|*|*| => spaces=2 star=4
+         | |*|*|*|*|*| => spaces=1 star=5
+         |*|*|*|*|*|*| => spaces=0 star=6      
+
+             *
+            * * 
+           * * * 
+          * * * * 
+         * * * * * 
+     
+*/ 
+
+         //rows
+        for(int i=0;i<=5;i++){
+            //spaces
+            for( int j=0;j<5-i;j++){
+                System.out.print(" ");
+            }  
+            for(int k=0;k<=i;k++){
+                System.out.print(" *");
+            }  
+
+            System.out.print("\n");
+        }
+
+/*
+        A B C D E
+        A B C D
+        A B C
+        A B
+        A
+ */
+
+
+ for(int i=0;i<5;i++){
+    char ch='A';
+    for(int j=0;j<5-i;j++){
+        char c = (char)(ch+j);
+        System.out.print(c);
+    }
+    System.out.println();
+ }
+
+
+/* 
          *****
          ****
          ***
@@ -117,11 +164,7 @@ public class forLoop {
         * * * * *
          
 
-        A B C D E
-        A B C D
-        A B C
-        A B
-        A
+        
 
 
         A
