@@ -1,6 +1,7 @@
 
 class Human{
-    int a;
+    //static variables
+    static int a;
     int b;
     int c;
 }
