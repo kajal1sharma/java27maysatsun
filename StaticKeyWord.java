@@ -12,24 +12,24 @@ class Student{
        
         }
 }
-public class StaticKeyWord {
-    int x;
-    public static void read(){
-        System.out.println("hello iam read function ");
-    }
-    public void readnonStatic(){
-        System.out.println("iam non static read func");
-    }
-    public void dosomething(){
-        this.x=90;
-        System.out.println("It does something");
-        this.readnonStatic();
-        read();
-    }
+// public class StaticKeyWord {
+//     int x;
+//     public static void read(){
+//         System.out.println("hello iam read function ");
+//     }
+//     public void readnonStatic(){
+//         System.out.println("iam non static read func");
+//     }
+//     public void dosomething(){
+//         this.x=90;
+//         System.out.println("It does something");
+//         this.readnonStatic();
+//         read();
+//     }
     public static void main(String[] args) {
         //StaticKeyWord.dosomething();
-        StaticKeyWord obj =new StaticKeyWord();
-        obj.dosomething();
+        // StaticKeyWord obj =new StaticKeyWord();
+        //obj.dosomething();
         // readnonStatic();
         // StaticKeyWord.read();
         // read();
