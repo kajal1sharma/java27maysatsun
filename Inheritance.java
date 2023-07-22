@@ -5,6 +5,13 @@ class VeryOldGenCar{
         System.out.println("iam a very old gen car ");
     }
      VeryOldGenCar(int x, int y){
+        this(34);
+        this.y=y;
+        System.out.println("iam a very old gen car para constructors ");
+
+    }
+    VeryOldGenCar(int x){
+        this.x=x;
         System.out.println("iam a very old gen car para constructors ");
     }
 }
@@ -63,8 +70,8 @@ class NewGenCars extends OldGenCars{
     }
     void printInfo(){
         System.out.println("==================");
-        System.out.println(tyres);
-        System.out.println(window);
+        System.out.println(this.tyres);
+        System.out.println(this.window);
         System.out.println(stering);
         System.out.println(seats);
         System.out.println(engine);
@@ -77,6 +84,8 @@ public class Inheritance {
     public static void main(String[] args) {
         NewGenCars obj = new NewGenCars(4, 40, 40, 30,30, 30, 20);
         obj.printInfo();
+         NewGenCars obj2 = new NewGenCars(4, 40, 40, 30,30, 30, 20);
+        obj2.printInfo();
         // OldGenCars obj = new OldGenCars();
         
         // OldGenCars obj = new OldGenCars();
