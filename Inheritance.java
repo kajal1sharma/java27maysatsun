@@ -1,9 +1,9 @@
 class VeryOldGenCar{
     int x;
     int y;
-    // VeryOldGenCar(){
-    //     System.out.println("iam a very old gen car ");
-    // }
+    VeryOldGenCar(){
+        System.out.println("iam a very old gen car ");
+    }
      VeryOldGenCar(int x, int y){
         System.out.println("iam a very old gen car para constructors ");
     }
@@ -20,10 +20,17 @@ class OldGenCars extends VeryOldGenCar{
     //     super(67,89);
     //     System.out.println("old gen constructors");
     // }
-    OldGenCars(int seats, int tyres, int engine){
+    OldGenCars(int seats, int tyres, int engine){//OldDenCars(int int int)
         //super()
         super(89,67);
-        System.out.println("old gen para constructor");
+        this.seats=seats;
+        this.tyres=tyres;
+        this.engine=engine;
+        // System.out.println("old gen para constructor");
+    }
+    OldGenCars(int seats, int tyres){
+        super();
+        System.out.println("old gen para constructor 2");
     }
     void speedOfTheCar(){
         System.out.println("the speed is very fast");
@@ -44,10 +51,15 @@ class NewGenCars extends OldGenCars{
     int musicSystem;
 
     NewGenCars(){
+        super(34,56);   
         System.out.println("iam a new generation constructors");
     }
     NewGenCars(int tyres , int window, int stering , int seats, int engine, int ac, int musicSystem){
-        System.out.println("iam a new para constructors");
+        super(seats,tyres, engine);
+        this.ac=ac;
+        this.musicSystem=musicSystem;
+        
+        // System.out.println("iam a new para constructors");
     }
     void printInfo(){
         System.out.println("==================");
@@ -64,6 +76,7 @@ class NewGenCars extends OldGenCars{
 public class Inheritance {
     public static void main(String[] args) {
         NewGenCars obj = new NewGenCars(4, 40, 40, 30,30, 30, 20);
+        obj.printInfo();
         // OldGenCars obj = new OldGenCars();
         
         // OldGenCars obj = new OldGenCars();
