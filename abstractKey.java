@@ -1,6 +1,6 @@
 
 abstract class Vehicle{
-    int seat;
+ int seat;
     int fuelCapacity;
     int runningCapacity;
     int wheels;
@@ -21,7 +21,11 @@ class MotorCycle extends TwoWheeler{
         System.out.println("land");
      }
 }
-
+class Ship extends Vehicle{
+    void ModeOfTRansport(){
+        System.out.println("water");
+    }
+}
 
 public class abstractKey {
 public static void main(String[] args) {
@@ -29,5 +33,7 @@ public static void main(String[] args) {
    // v.ModeOfTRansport();
     MotorCycle m = new MotorCycle();
     m.ModeOfTRansport();
+
+    
 }    
 }
