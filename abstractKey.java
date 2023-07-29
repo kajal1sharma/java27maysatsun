@@ -9,7 +9,7 @@ abstract class Vehicle{
         System.out.println("n amount of distance has been travelled by the vehicle");
     }
 
-   abstract void ModeOfTRansport();
+    abstract void ModeOfTRansport();
 }
 
 abstract class TwoWheeler extends Vehicle{
