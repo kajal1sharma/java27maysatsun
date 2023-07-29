@@ -8,7 +8,13 @@ interface Person{
 
 }
 
-class Doctor implements Person{
+interface Person1{
+   static int count=90;
+   void talk();
+   //void slowTalk();
+}
+
+class Doctor implements Person,Person1{
     String name;
 
     public void run(){
@@ -23,7 +29,9 @@ class Doctor implements Person{
     public boolean checkAge(int age){
         return true;
     }
+    public void talk(){
 
+    }
 
 }
 

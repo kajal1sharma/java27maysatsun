@@ -1,4 +1,8 @@
 
+
+
+
+
 abstract class Vehicle{
  int seat;
     int fuelCapacity;
