@@ -35,6 +35,10 @@ class Child extends Base{
 }
 
 class Child2 extends Child{
+    
+    void difference(float a, float b){
+
+    }
     int a;
     int b;
 
