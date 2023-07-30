@@ -1,4 +1,5 @@
-
+//final function and polymorphism
+//final classes cannot be inherited
 class Mobile{
 
     String name;
@@ -16,15 +17,24 @@ class Mobile{
     // Mobile(String num){
     //     this.number = num;
     // }
-    void dialNumber(){
+     void dialNumber(){
         System.out.println("iam dialing a number");    
     }
 }
 
+class Abc extends Mobile{
+    void dialNumber(){
+        System.out.println("iam not dialing a number");
+    }
+}
 
 public class FinalKey {
     public static void main(String[] args) {
-        System.out.println(Mobile.number);
+        
+        // Abc obj= new Abc();
+        // obj.dialNumber();
+
+        // System.out.println(Mobile.number);
 
         // Mobile m1= new Mobile("1234");
         // //m1.number="43423";
