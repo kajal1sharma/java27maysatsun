@@ -24,7 +24,7 @@ public class Abc {
         z=b;
     }
 
-    public int sum(int a, int b){
+     int sum(int a, int b){
         return a+b;
     }
 }
