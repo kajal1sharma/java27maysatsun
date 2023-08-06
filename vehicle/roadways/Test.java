@@ -24,4 +24,7 @@ public class Test extends Truck implements Abc{
    public void getInfoTruck(){
         System.out.println("hey this is a function of truck");
     }
+    public static void main(String[] args) {
+        
+    }
 }
