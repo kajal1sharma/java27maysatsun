@@ -3,7 +3,15 @@ public class StringTest {
     public static void main(String[] args) {
 
 
-        String s="this,is,a,string,is,is,is";
+
+        String s="tree";
+        //System.out.println(s.charAt(4));
+        System.out.println(s.equals(new String(" tree")));//compares the values, == compares the reference
+        System.out.println(s==new String("tree"));
+        // System.out.println(s.contains("thisr"));
+        // System.out.println(s.concat("jghjkdhghdshgkjdsfhgjkhdjk"));
+
+
         // System.out.println(s.length());
         // System.out.println(s.substring(6,14));
         // System.out.println(s.substring(6));
@@ -14,6 +22,7 @@ public class StringTest {
         // for(int i=0;i<arr.length;i++){
         //     System.out.print(arr[i]+" , ");
         // }
+
         // String s= "string 1";
         // String s2="string 1";
     
