@@ -4,10 +4,30 @@ public class StringTest {
 
 
 
-        String s="tree";
-        //System.out.println(s.charAt(4));
-        System.out.println(s.equals(new String(" tree")));//compares the values, == compares the reference
-        System.out.println(s==new String("tree"));
+        String arr [] ={"abc.txt","script.js","Test.java","abc.py","Operators.java"};
+        int len = 0;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i].contains(".java")){
+                len++;
+            }
+        }
+        String ans[] = new String[len];
+        int j=0;
+        for(int i=0;i<arr.length;i++){
+             if(arr[i].contains(".java")){
+                ans[j]=arr[i];
+                System.out.println(ans[j]);
+                j++;
+            }
+        }
+
+
+
+
+        // String s="tree";
+        // //System.out.println(s.charAt(4));
+        // System.out.println(s.equals(new String(" tree")));//compares the values, == compares the reference
+        // System.out.println(s==new String("tree"));
         // System.out.println(s.contains("thisr"));
         // System.out.println(s.concat("jghjkdhghdshgkjdsfhgjkhdjk"));
 
