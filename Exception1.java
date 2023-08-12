@@ -35,7 +35,10 @@ public class Exception1 {
         doSomething();
        }
         catch(Exception e){
-            System.out.println("Exception has been handled");
+            StackTraceElement arr[]=e.getStackTrace();
+            for(int i=0;i<arr.length;i++){
+                System.out.println(arr[i]);
+            }
         }
         System.out.println("line 2 in main");
 
