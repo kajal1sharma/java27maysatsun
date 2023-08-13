@@ -4,6 +4,20 @@ import java.util.Scanner;
 
 public class StringTest {
     public static void main(String[] args) {
+
+
+
+        String s="abcdef";
+        StringBuilder str = new StringBuilder(s);
+        System.out.println(str);
+        str.append("ghi");
+        System.out.println(str);
+        System.out.println(str.reverse());
+        System.out.println(str.charAt(0));
+        char ch[]= {'a','b','v','g','r','y'};
+        System.out.println(str.append(ch));
+
+
 //reverse => this is a string ans=> gnirt a si siht
 
         // Scanner sc =new Scanner(System.in);
@@ -31,23 +45,23 @@ public class StringTest {
             
 
 //palindrome abccba =>true , abcdca=>false
-                String str ="abctba";
+                // String str ="abctba";
                 
-                int j=str.length()-1;
-                boolean flag=true;
-                int i=0;
-                while(i<j){
-                    if(str.charAt(i)==str.charAt(j)){
-                        i++;
-                        j--;
-                    }
-                    else{
-                        flag=false;
-                        break;
-                    }
-                }
+                // int j=str.length()-1;
+                // boolean flag=true;
+                // int i=0;
+                // while(i<j){
+                //     if(str.charAt(i)==str.charAt(j)){
+                //         i++;
+                //         j--;
+                //     }
+                //     else{
+                //         flag=false;
+                //         break;
+                //     }
+                // }
 
-                System.out.println(flag);
+                // System.out.println(flag);
                 //String rev="";
                 // for(int i=0;i<str.length();i++){
                 //     rev=str.charAt(i)+rev;
