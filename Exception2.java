@@ -5,7 +5,15 @@ public class Exception2 {
        
 
         try{
-            int i=90;
+            // int i=90;
+            String name="tina";//i want to make my own exception based on application requiremt
+            if(name.equals("reena")){
+
+            }
+            else{
+                Exception ref = new Exception("only reena can access my application");
+                 throw ref;
+            }
         }
         catch(Exception e){
             System.out.println("i have handled it");
