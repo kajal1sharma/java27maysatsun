@@ -60,6 +60,7 @@ public class Exception2 {
         //  catch(Exception e){
         //     System.out.println(e);
         // }
+        
        
     }
 }
