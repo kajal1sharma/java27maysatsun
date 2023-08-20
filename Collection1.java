@@ -1,5 +1,8 @@
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 import java.util.Stack;
 
 class Xyz{
@@ -30,28 +33,41 @@ public class Collection1 {
     public static void main(String[] args) {
 
 
-        Stack<Xyz> st = new Stack<Xyz>();
-        Stack<Xyz> st2 = new Stack<Xyz>();
-        Xyz obj1 = new Xyz(23, 30);
-        Xyz obj2 =new Xyz(23, 90);
-        Xyz obj3 = new Xyz(50, 550);
+        //parent =>child 
+        List<Integer> li = new ArrayList<Integer>();//order used to preserved,duplication was allowed
+        Set<Integer> arrset = new HashSet<Integer>();
 
-        st.push(obj1);
-        st.push(obj2);
-        st.push(obj3);
-        st2.push(obj1);
-        st2.push(obj2);
-        st2.push(obj3);
+        arrset.add(123);
+        arrset.add(45);
+        arrset.add(45);
+        arrset.add(90);
+        arrset.add(null);
+        arrset.add(null);
+        System.out.println(arrset);
 
-        st.addAll(st2);
-        System.out.println(st);
-        Xyz ref = st.peek();
-        System.out.print(ref.getA()+"  ");
-        System.out.println(ref.getB());
-        st.pop();
-        ref = st.peek();
-        System.out.print(ref.getA()+"  ");
-        System.out.println(ref.getB());
+
+        // Stack<Xyz> st = new Stack<Xyz>();
+        // Stack<Xyz> st2 = new Stack<Xyz>();
+        // Xyz obj1 = new Xyz(23, 30);
+        // Xyz obj2 =new Xyz(23, 90);
+        // Xyz obj3 = new Xyz(50, 550);
+
+        // st.push(obj1);
+        // st.push(obj2);
+        // st.push(obj3);
+        // st2.push(obj1);
+        // st2.push(obj2);
+        // st2.push(obj3);
+
+        // st.addAll(st2);
+        // System.out.println(st);
+        // Xyz ref = st.peek();
+        // System.out.print(ref.getA()+"  ");
+        // System.out.println(ref.getB());
+        // st.pop();
+        // ref = st.peek();
+        // System.out.print(ref.getA()+"  ");
+        // System.out.println(ref.getB());
 
 
 
