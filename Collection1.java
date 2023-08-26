@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 import java.util.Stack;
@@ -36,7 +37,8 @@ public class Collection1 {
         //parent =>child 
         List<Integer> li = new ArrayList<Integer>();//order used to preserved,duplication was allowed
         Set<Integer> arrset = new HashSet<Integer>();
-
+        LinkedList<Integer> lilist = new LinkedList<>();
+        Stack<Integer> st;
         arrset.add(123);
         arrset.add(45);
         arrset.add(45);
