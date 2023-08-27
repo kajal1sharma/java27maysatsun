@@ -5,6 +5,8 @@ public class MapItnf {
     public static void main(String[] args) {
 
 
+
+        //LinkedHashMap<>
         TreeMap<Integer, String> tm = new TreeMap<>();
         tm.put(34,"tina");
         tm.put(90,"pooja");
