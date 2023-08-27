@@ -1,13 +1,18 @@
 import java.io.File;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class FileIo {
     public static void main(String[] args) throws IOException  {
         
 
-        File f6 = new File("./temp/temp2");
-        File f7 = new File(f6,"text.doc");
-        f7.createNewFile();
+        Scanner sc= new Scanner(System.in);
+
+        int a=sc.nextInt();
+        System.out.println(a);
+        // File f6 = new File("./temp/temp2");
+        // File f7 = new File(f6,"text.doc");
+        // f7.createNewFile();
 
         // File f5 = new File("./temp", "temp2");
         // f5.mkdir();
