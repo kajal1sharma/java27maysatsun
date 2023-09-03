@@ -2,16 +2,28 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
+
+class Student {
+    int rollno;
+    String name;
+    int marks;
+}
 public class FileIo {
     public static void main(String[] args) throws IOException  {
         
+        Student[] arr = new Student[50];
+
 
         Scanner sc= new Scanner(System.in);
 
+        //marks 50 store;
         int a=sc.nextInt();
         System.out.println(a);
-        // File f6 = new File("./temp/temp2");
-        // File f7 = new File(f6,"text.doc");
+
+        File f6 = new File("./temp/temp2");
+        File f7 = new File(f6,"text.doc");
+        f7.compareTo(f6);
+        
         // f7.createNewFile();
 
         // File f5 = new File("./temp", "temp2");
